@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+nav {
+  border: 2px solid #005f73;
+  color: white;
+  background-color: #0a9396;
+  margin: 3%;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #94d2bd;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid #005f73;
+  margin-right: 20vw;
+  margin-left: 20vw;
+  padding: 20px;
+  width: 60vw;
+  background-color: white;
+}
+
+#myImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div {
+  margin: 10px;
+  padding: 10px;
+  width: 47.5vw;
+  border: 2px solid #005f73;
+  background-color: #f0f8ff;
+}
+
+h3 {
+  text-align: center;
+}
+
+#Contactbox {
+  width: 80vw;
+  min-height: 20vh;
+  margin: 10%;
+  border: 10px solid Hotpink;
+  background-color: pink;
+  padding: 20px;
+}
+
+#Projects {
+  overflow: auto;
+  min-height: 20vh;
+  display: inline-block;
+}
+
+#Home,
+#About,
+#Projects,
+#Socials {
+  margin-bottom: 20px;
+  display: flex;
+  display: inline-block;
+  height: 20vh;
+  overflow: auto;
+  font-size: 20px;
+}
+
+.intro {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #005f73;
+  border-radius: 5px;
+  width: 200px;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  border: 2px solid #005f73;
+  background-color: #005f73;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0a9396;
+}
+
+#Projects ol {
+  list-style-type: devanagari;
+  margin: 20px;
+  padding: 20px;
+}
+
+#Socials ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 32px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #005f73;
+  color: white;
+  margin-top: 30px;
+}
