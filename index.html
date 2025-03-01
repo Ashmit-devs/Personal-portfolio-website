@@ -1,34 +1,38 @@
 <!DOCTYPE html>
+
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Personal Portfolio Website</title>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  <nav>
-    <ul>
-      <li><a href=#Home>Home</a></li>
-      <li><a href=#About>About</a></li>
-      <li><a href=#Projects>Projects</a></li>
-      <li><a href=#Contact>Contact</a></li>
-      <li><a href=#Socials>Socials</a></li>
-    </ul>
-  </nav>
-  <div class="imgContainer">
-    <img id="myImg" src="myImg.jpg" alt="My Image">
-    <div class="textContainer">
-      <p class="intro" style="font-weight: bold; font-size: 30px;">Ashmit Singh</p>
-      <p class="intro" style="font-size:15px;">Welcome to my portfolio website</p>
+    <div class="nav">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Socials">Socials</a>
+      <a href="#Contact">Contact</a>
     </div>
-  </div>
-  <section id="Home">
-    <div>
-      <h3>Home</h3>
+    <div class="parent-intro">
+    <div class="Intro">
+      <img src="myImg.jpg" height="80%" >
+      <div class="child-intro">
+        <div class="block">
+          <p class="bold">Ashmit Singh</p>
+        </div>
+        <div class="block">
+          <p class="thin">Welcome to my website</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  <div id="Home">
+    <div class="Home">
+      <p class="bold">Home</p>
+    </div>
+    <div class="Home-inst">
       <p>Welcome to my personal portfolio! I'm Ashmit Singh, a passionate web developer who loves crafting beautiful and
         functional websites. Whether it's building sleek user interfaces, optimizing web performance, or experimenting
         with new technologies, I strive to create impactful digital experiences.
@@ -36,12 +40,13 @@
         This portfolio showcases my projects, skills, and journey in web development. Feel free to explore and get in
         touch!</p>
     </div>
-  </section>
-  <section id="About">
-    <div>
-      <h3>Bio</h3>
-      <p>Myself Ashmit Singh A web developer!!</p>
-      <p>I started my web development journey by mastering the fundamentals—HTML, CSS, and JavaScript. Over time, I have
+  </div>
+  <div id="About">
+    <div class="About">
+    <p class="bold">Bio</p>
+    </div>
+      <p>Myself Ashmit Singh A web developer!!
+      I started my web development journey by mastering the fundamentals—HTML, CSS, and JavaScript. Over time, I have
         built projects like a Netflix clone, a hexadecimal-to-binary converter, and this very portfolio website.
 
         Currently, I'm diving deeper into full-stack development, learning frameworks, and improving my data structures
@@ -50,40 +55,37 @@
 
         I believe in continuous learning and enjoy experimenting with new technologies. If you’re interested in
         collaborating or just want to chat, feel free to reach out!</p>
+  </div>
+  <div id="Projects">
+    <div class="Projects">
+      <p class="bold">Projects</p>
     </div>
-  </section>
-  <section id="Projects">
-    <div>
-      <h3>Projects</h3>
       <ol>
         <li>Personal Portfolio Website</li>
         <li>Hexadecimal to binary converter</li>
         <li>Netflix Clone</li>
       </ol>
-    </div>
-  </section>
-  <section id="Socials">
+  </div>
+  <div id="Socials">
     <div>
-      <h3>Socials</h3>
+      <p class="bold">Socials</p>
+    </div>
       <ul>
         <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/ashmit-singh-484697345">LinkedIn</a></li>
         <li><i class="fa-brands fa-github"></i><a href="https://github.com/Ashmit-devs">GitHub</a></li>
         <li><i class="fa-brands fa-codepen"></i><a href="https://leetcode.com/Ashmit1987/">Leetcode</a></li>
       </ul>
-    </div>
-  </section>
-  <section id="Contact">
-    <div id="Contactbox">
+  </div>
+  <div id="Contact">
+    <div class="Contact">
       <h3>Contact Me</h3>
-      <form action="submit_form.php" method="get">
+    </div>
+      <form action="submit_form.php" method="post">
         <label for="usermail">Enter Your email to subscribe to my newsletter:</label>
         <input type="email" id="usermail" name="usermail">
         <input type="submit" value="Submit">
         <a href="mailto:ashmitsingh10000@gmail.com">Send me an Email</a>
       </form>
-    </div>
-  </section>
-  <script src="script.js"></script>
+  </div>
 </body>
-
 </html>
