@@ -3,6 +3,10 @@
   box-sizing: border-box;
   padding:0;
   font-size: 2vw;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .nav{
